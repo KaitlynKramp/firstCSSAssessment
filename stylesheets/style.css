@@ -1,9 +1,25 @@
 body {
   font-family: Arial, Helvetica, serif;
   font-size: 18px;
-  text-align: center;
 }
 
-ul {
+#nav-ul {
   list-style: none;
+  text-align: center;
+  width: 100%;
+  background-color: #003100;
+}
+li {
+  padding: 5px;
+  margin: 4px;
+  font-size: 20px;
+}
+.nav-link {
+  padding: 5px;
+  margin: 6px;
+  background-color: #003100;
+  color: #eeffee;
+}
+.nav-link li {
+  display: inline-block;
 }
