@@ -19,8 +19,12 @@ nav {
   text-decoration: none;
 }
 .nav-link:hover {
-  background-color: aqua;
+  background-color: #011f01;
 }
 header {
-  margin-top: 60px;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+main {
+  margin: 50px;
 }
