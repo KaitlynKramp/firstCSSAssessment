@@ -3,11 +3,13 @@ body {
   font-size: 18px;
 }
 
-#nav-ul {
+nav {
   list-style: none;
   text-align: center;
   width: 100%;
   background-color: #003100;
+  position: fixed;
+  top: 0px;
 }
 li {
   padding: 5px;
@@ -19,7 +21,4 @@ li {
   margin: 6px;
   background-color: #003100;
   color: #eeffee;
-}
-.nav-link li {
-  display: inline-block;
 }
