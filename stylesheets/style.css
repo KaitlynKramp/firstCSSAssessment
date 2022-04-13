@@ -11,10 +11,10 @@ nav {
   padding: 15px;
   left: 0;
   right: 0;
+  font-size: 16px;
 }
 .nav-link {
-  padding: 14px 16px;
-  background-color: #003100;
+  padding: 22px 16px;
   color: #eeffee;
   text-decoration: none;
 }
@@ -27,4 +27,12 @@ header {
 }
 main {
   margin: 50px;
+}
+#nav-name {
+  display: inline;
+  color: #eeffee;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  font-size: 22px;
 }
