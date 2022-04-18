@@ -3,7 +3,7 @@
   Course: Software Development 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified:
+  Date Last Modified: 4/18/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,15 +14,40 @@
     <title>Zen Kramp Home</title>
 
     <style>
-      h1 {
-        margin-left: 250px;
-        margin-top: 200px;
-        margin-right: 800px;
-        background-color: tomato;
-        display: inline-block;
+      #header-img {
+        /*Centers image */
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
       }
-      figure {
-        float: right;
+      h1 {
+        /*Puts the header where I want it and changes font size */
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        font-size: 46px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+      #about-me {
+        /*Creates a flexbox for the about me section so the image and text can be side by side */
+        display: flex;
+        margin-right: 50px;
+      }
+      #about-me-content {
+        /*Puts the about me content where I want it and changes background colour */
+        background-color: #1e5055;
+        padding: 20px;
+        margin-right: 20%;
+        margin-top: 90px;
+        margin-bottom: 90px;
+      }
+      #skills-header {
+        /*Adds a box around skills header */
+        background-color: #1e5055;
+        padding: 8px;
+        margin-top: 100px;
       }
     </style>
 
@@ -38,13 +63,53 @@
       <p id="nav-name">Zenith Kramp</p>
     </nav>
     <header>
-      <h1>Hello, I'm Zen</h1>
-      <figure>
-        <img src="Images/axolotlTable.jpg" alt="test image" height="100px" />
-      </figure>
+      <h1>
+        Hello <br />
+        I'm Zen
+      </h1>
+      <img
+        id="header-img"
+        src="images/zen-header-img.png"
+        alt="Headshot of Zenith Kramp"
+        height="600"
+      />
     </header>
     <main>
-      <p>test</p>
+      <section>
+        <h2>About Me</h2>
+        <div id="about-me">
+          <p id="about-me-content">
+            My name is <span style="color: #c2edce">Zenith</span>. I'm a student
+            with creative inclinations who occasionally dips their toes into
+            digital art freelance. I'm currently working toward a job in the
+            arts, preferably something to do with writing. I'm friendly,
+            outgoing and ambitious, and will always find a way to make the most
+            of a bad situation.
+          </p>
+          <img
+            src="images/zen-grad.jpg"
+            alt="Picture of Zenith Kramp standing outside in their graduation gown"
+            height="400px"
+            width="400px"
+          />
+        </div>
+      </section>
+      <section>
+        <h2 id="skills-header">Skills</h2>
+        <ul>
+          <!--Prettier makes the last two li's weird here, tried to fix it and make the other
+              the same but I couldn't-->
+          <li>Proficient in customer service.</li>
+          <li>The ability to stand for long periods of time.</li>
+          <li>Hardworking and able to keep busy.</li>
+          <li>
+            Social and a team player, able to collaborate well with others.
+          </li>
+          <li>
+            Reliable and punctual, if I make a commitment I follow through.
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>

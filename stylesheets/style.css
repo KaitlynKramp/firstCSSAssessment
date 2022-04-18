@@ -1,36 +1,43 @@
 body {
+  /*Sets font, font size, background colour, and text colour for the whole webpage*/
   font-family: Arial, Helvetica, serif;
-  font-size: 18px;
+  font-size: 22px;
+  background-color: #388087;
+  color: #f6f6f2;
 }
 
 nav {
-  overflow: hidden;
-  background-color: #003100;
-  position: fixed;
-  top: 0px;
+  overflow: hidden; /* hides the overflow of some tag to make it look cleaner */
+  background-color: #c2edce; /*sets nave background colour */
+  position: fixed; /*Lets nav follow along with the page and always stay at the top*/
+  top: 0px; /*Sticks the nav to the top of the page */
   padding: 15px;
-  left: 0;
-  right: 0;
+  left: 0; /* makes nav go all the way to the left*/
+  right: 0; /* makes nav go all the way to the right*/
   font-size: 16px;
+  z-index: +1; /*Set the layering above other text so the nav is always on top */
 }
 .nav-link {
   padding: 22px 16px;
-  color: #eeffee;
-  text-decoration: none;
+  color: #388087;
+  text-decoration: none; /*Removes underline*/
 }
 .nav-link:hover {
-  background-color: #011f01;
+  background-color: #d7ffe3; /*Makes text light up a bit when hovered over*/
 }
 header {
+  /*Sets header a little ways down from nav so it looks nicer, put on
+   external so I won't have to put in custom margins all the time */
   margin-left: 60px;
   margin-top: 100px;
 }
 main {
-  margin: 60px;
+  margin: 60px; /*brings out the content away from the sides */
 }
 #nav-name {
+  /*Adds Zenith Kramp name on nav, not clickable, just looks nice */
+  color: #388087;
   display: inline;
-  color: #eeffee;
   float: right;
   padding: 0px;
   margin: 0px;
