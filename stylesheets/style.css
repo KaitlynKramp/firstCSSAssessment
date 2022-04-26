@@ -7,6 +7,10 @@ body {
   line-height: 140%;
 }
 
+h2 {
+  font-size: 34px;
+}
+
 nav {
   overflow: hidden; /* hides the overflow of some tag to make it look cleaner */
   background-color: #f4f6f6; /*sets nave background colour */
