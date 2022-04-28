@@ -5,7 +5,7 @@
 
 body {
   /*Sets font size, background colour, and text colour for the whole webpage*/
-  font-size: 22px;
+  font-size: 30px;
   background-color: #d4e5ed;
   color: #171d3b;
 }
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-size: 34px;
+  font-size: 58px;
 }
 
 nav {
