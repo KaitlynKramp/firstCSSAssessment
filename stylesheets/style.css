@@ -30,7 +30,7 @@ nav {
   z-index: +1; /*Set the layering above other text so the nav is always on top */
 }
 .nav-link {
-  padding: 22px 16px;
+  padding: 2vh 1vw;
   color: #171d3b;
   text-decoration: none; /*Removes underline*/
 }
