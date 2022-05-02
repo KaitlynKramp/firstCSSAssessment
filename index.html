@@ -3,7 +3,7 @@
   Course: Software Development 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified: 4/18/2022
+  Date Last Modified: 5/2/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,16 +16,23 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
 
     <style>
+      /*
+        Sets the top and bottom margin to 0 and left
+        and right margin to auto, also sets display 
+        to inline block
+      */
       #header-img {
-        /*Centers image*/
         margin: 0 auto;
         display: inline-block;
       }
+      /*
+        Sets the margin to 0, sets it's display to 
+        inline block, sets it positon to relative,
+        sets the top to 50% for spacing and takes 
+        50% off the y value so it comes closer to 
+        the top
+      */
       h1 {
-        /*Puts the header where I want it and changes font size*/
-        /* position: absolute;
-        top: 20%;
-        left: 25%; */
         margin: 0;
         display: inline-block;
 
@@ -34,13 +41,34 @@
 
         transform: translateY(-50%);
       }
+
+      /*
+        Sets its vertical position to 5% since the
+        above code moved the nav name to the very top
+      */
+      #nav-name {
+        transform: translateY(5%);
+      }
+      /*
+       Creates a flexbox for the about me section so 
+       the image and text can be side by side. Also 
+       gives it 5% for the right margin to give it
+       space on the right
+      */
       #about-me {
-        /*Creates a flexbox for the about me section so the image and text can be side by side*/
         display: flex;
         margin-right: 5%;
       }
+      /*
+        Changes the background colour to #171e26 and 
+        changes text colour to #d4e5ed also changes the
+        top and bottom padding to 20px and right and
+        left padding to 40px. Changes box margin
+        to 20% for the right and auto for top and bottom
+        also changes border radius to 5px to make the
+        edges of the box to be more rounded
+      */
       #about-me-content {
-        /*Puts the about me content where I want it and changes background colour*/
         background-color: #171e26;
         color: #d4e5ed;
         padding: 20px 40px;
@@ -49,9 +77,12 @@
         margin-bottom: auto;
         border-radius: 5px;
       }
+      /*
+        Gives the skills header 1% padding and gives 
+        it 10% margin on the top to provide space from
+        the about me content
+      */
       #skills-header {
-        /*Adds a box around skills header*/
-        color: #171e26;
         padding: 1%;
         margin-top: 10%;
       }

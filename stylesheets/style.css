@@ -1,58 +1,116 @@
+/*
+  I chose a blue colour family to represent my 
+  client's website because it's purpose is to be
+  an eportfolio to show to employers. Since blue
+  represents trust and dependability (which is 
+  important to look for when hiring a new employee)
+  I chose it to be the colour family for this website.
+*/
+
+/*
+  Sets the line height to 140% and sets the
+  font to first Verdana but if that's not available
+  then Geneva, but if that's not available 
+  then Tahoma, and finally, if that's not available
+  then it defaults to sans-serif. Elements in
+  here apply to everything
+*/
 * {
   line-height: 140%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*
+  Sets the font size for everything in the 
+  body to 30px, also changes the background
+  colour to #d4e5ed and text colour to #171d3b
+*/
 body {
-  /*Sets font size, background colour, and text colour for the whole webpage*/
   font-size: 30px;
   background-color: #d4e5ed;
   color: #171d3b;
 }
 
+/*
+  Changes the h1 font size to 128px
+*/
 h1 {
   font-size: 128px;
 }
-
+/*
+  Changes the h2 font size to 58px 
+*/
 h2 {
   font-size: 58px;
 }
 
+/*
+  Hides any overflow so it looks cleaner, sets
+  the background colour to #d4e5ed, sets the 
+  position to fixed so the nav always stay at 
+  the top of the page, sets to top value to 0
+  so it sticks to the very top of the page, sets
+  the padding to 15px, sets left and right to 0 
+  so the nav goes to the sides of the page, sets the 
+  nav font size to 16px, and sets the z-index to 
+  +1 so the nav is always on top 
+*/
 nav {
-  overflow: hidden; /* hides the overflow of some tag to make it look cleaner */
-  background-color: #d4e5ed; /*sets nave background colour */
-  position: fixed; /*Lets nav follow along with the page and always stay at the top*/
-  top: 0px; /*Sticks the nav to the top of the page */
+  overflow: hidden;
+  background-color: #d4e5ed;
+  position: fixed;
+  top: 0px;
   padding: 15px;
-  left: 0; /* makes nav go all the way to the left*/
-  right: 0; /* makes nav go all the way to the right*/
+  left: 0;
+  right: 0;
   font-size: 16px;
-  z-index: +1; /*Set the layering above other text so the nav is always on top */
+  z-index: +1;
 }
+
+/*
+  For the links in the nav, sets the top and 
+  bottom padding to 23px and right and left 
+  padding to 15px, and sets text decoration to 
+  none so there's no underline
+*/
 .nav-link {
-  padding: 2vh 1vw;
-  color: #171d3b;
-  text-decoration: none; /*Removes underline*/
+  padding: 23px 15px;
+  text-decoration: none;
 }
+/*
+  When hovering over the links in the nav, changes
+  the background colour to #171d3b and text colour
+  to #d4e5ed
+*/
 .nav-link:hover {
-  background-color: #171d3b; /*Makes text light up a bit when hovered over*/
+  background-color: #171d3b;
   color: #d4e5ed;
 }
+
+/*
+  Sets the header position to relative and adds a left
+  margin value to 5%
+*/
 header {
   position: relative;
-
-  /*Sets header a little ways down from nav so it looks nicer, put on
-   external so I won't have to put in custom margins all the time */
   margin-left: 5%;
-  /* margin-top: 10%; */
 }
+
+/*
+  Sets the main margin to 60px to bring the content away
+  from the sides
+*/
 main {
-  margin: 60px; /*brings out the content away from the sides */
+  margin: 60px;
 }
+
+/*
+  Adds an unclickable name on the nav, sets the position 
+  to static, changes display to inline, makes it float to
+  the right, sets margin and padding to 0, sets font size
+  20px, and sets font weight to 100
+*/
 #nav-name {
-  /*Adds Zenith Kramp name on nav, not clickable, just looks nice */
   position: static;
-  color: #171d3b;
   display: inline;
   float: right;
   padding: 0px;
