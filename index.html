@@ -24,6 +24,8 @@
       #header-img {
         margin: 0 auto;
         display: inline-block;
+        max-width: 60%;
+        height: auto;
       }
       /*
         Sets the margin to 0, sets it's display to 
@@ -58,6 +60,13 @@
       #about-me {
         display: flex;
         margin-right: 5%;
+      }
+
+      @media screen and (max-width: 800px) {
+        #about-me {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
       }
       /*
         Changes the background colour to #171e26 and 
@@ -106,7 +115,6 @@
         id="header-img"
         src="images/zen-header-img.png"
         alt="Headshot of Zenith Kramp"
-        height="600"
       />
     </header>
     <main>
@@ -123,7 +131,7 @@
           <img
             src="images/zen-grad.jpg"
             alt="Picture of Zenith Kramp standing outside in their graduation gown"
-            height="500px"
+            style="max-width: 28%; height: auto"
           />
         </div>
       </section>

@@ -25,7 +25,7 @@
   colour to #d4e5ed and text colour to #171d3b
 */
 body {
-  font-size: 30px;
+  font-size: 1.9vw;
   background-color: #d4e5ed;
   color: #171d3b;
 }
@@ -34,13 +34,13 @@ body {
   Changes the h1 font size to 128px
 */
 h1 {
-  font-size: 128px;
+  font-size: 8vw;
 }
 /*
   Changes the h2 font size to 58px 
 */
 h2 {
-  font-size: 58px;
+  font-size: 3.6vw;
 }
 
 /*
@@ -62,7 +62,7 @@ nav {
   padding: 15px;
   left: 0;
   right: 0;
-  font-size: 16px;
+  font-size: 1vw;
   z-index: +1;
 }
 
@@ -116,6 +116,6 @@ main {
   float: right;
   padding: 0px;
   margin: 0px;
-  font-size: 20px;
+  font-size: 1.25vw;
   font-weight: 100;
 }
