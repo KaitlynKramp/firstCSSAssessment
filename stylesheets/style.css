@@ -77,11 +77,12 @@ nav {
   text-decoration: none;
 }
 /*
-  When hovering over the links in the nav, changes
+  When hovering and tabbed over the links in the nav, changes
   the background colour to #171d3b and text colour
   to #d4e5ed
 */
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   background-color: #171d3b;
   color: #d4e5ed;
 }
