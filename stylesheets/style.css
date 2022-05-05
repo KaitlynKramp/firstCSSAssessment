@@ -30,6 +30,12 @@ body {
   color: #171d3b;
 }
 
+@media screen and (max-width: 750px) {
+  h1 {
+    margin-top: 10%;
+  }
+}
+
 /*
   Changes the h1 font size to 128px
 */
@@ -73,7 +79,7 @@ nav {
   none so there's no underline
 */
 .nav-link {
-  padding: 23px 15px;
+  padding: 2% 1%;
   text-decoration: none;
 }
 /*
