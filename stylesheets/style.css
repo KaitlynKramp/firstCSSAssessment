@@ -61,7 +61,6 @@ h2 {
   +1 so the nav is always on top 
 */
 nav {
-  overflow: hidden;
   background-color: #d4e5ed;
   position: fixed;
   top: 0px;
