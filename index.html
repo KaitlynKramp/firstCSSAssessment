@@ -18,7 +18,7 @@
     <style>
       /*
         Sets the top and bottom margin to 0 and left
-        and right margin to auto, also sets display
+        and right margin to auto, also sets display 
         to inline block
       */
       #header-img {
@@ -28,11 +28,14 @@
         height: auto;
       }
       /*
-        Sets the margin to 0, sets it's display to
+        Sets the margin to 0, sets it's display to 
         inline block, sets it positon to relative,
-        sets the top to 50% for spacing and takes
-        50% off the y value so it comes closer to
-        the top
+        sets the top to 50% for spacing and takes 
+        50% off the y value so it comes closer to 
+        the top (uses webkit, moz, and ms to make 
+        transform compatible to older versions of
+        internet explorer, firefox, chrome, safari,
+        opera, and android browser)
       */
       h1 {
         margin: 0;
@@ -41,6 +44,9 @@
         position: relative;
         top: 50%;
 
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
       }
 
@@ -49,13 +55,19 @@
         above code moved the nav name to the very top
       */
       #nav-name {
+        -webkit-transform: translateY(5%);
+        -moz-transform: translateY(5%);
+        -ms-transform: translateY(5%);
         transform: translateY(5%);
       }
       /*
-       Creates a flexbox for the about me section so
-       the image and text can be side by side. Also
+       Creates a flexbox for the about me section so 
+       the image and text can be side by side. Also 
        gives it 5% for the right margin to give it
-       space on the right
+       space on the right (uses webkit, moz, and ms
+       to make transform compatible to older versions
+       of internet explorer, firefox, chrome, safari,
+       opera, and android browser)
       */
       #about-me {
         display: flex;
@@ -68,6 +80,7 @@
           gap: 15px 5%;
           margin: 0;
           padding: 0%;
+          -webkit-align-items: flex-start;
           align-items: flex-start;
         }
         #about-me p {
@@ -80,7 +93,7 @@
         }
       }
       /*
-        Changes the background colour to #171e26 and
+        Changes the background colour to #171e26 and 
         changes text colour to #d4e5ed also changes the
         top and bottom padding to 20px and right and
         left padding to 40px. Changes box margin
@@ -98,7 +111,7 @@
         border-radius: 5px;
       }
       /*
-        Gives the skills header 1% padding and gives
+        Gives the skills header 1% padding and gives 
         it 10% margin on the top to provide space from
         the about me content
       */

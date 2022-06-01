@@ -73,12 +73,18 @@ nav {
 
 /*
   For the links in the nav, sets the top and 
-  bottom padding to 23px and right and left 
-  padding to 15px, and sets text decoration to 
-  none so there's no underline
+  bottom padding to 2% and right and left 
+  padding to 1%, sets color to #171d3b and 
+  sets text decoration to none so there's 
+  no underline (uses -webkit- -moz- to make
+  text-decoration compatible to older versions
+  of safari, opera, chrome, and firefox)
 */
 .nav-link {
   padding: 2% 1%;
+  color: #171d3b;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
   text-decoration: none;
 }
 /*

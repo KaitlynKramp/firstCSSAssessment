@@ -13,10 +13,16 @@
         Aligns to center, sets the display to flex,
         and justifys content to space around to evenly
         space content and bring it out from the sides 
-        a bit
+        a bit (uses webkit, moz, and ms so display:flex
+        works on older versions of internet explorer,
+        firefox, chrome, safari, opera, and 
+        android browser)
       */
       .hobbies {
         text-align: center;
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
         display: flex;
         justify-content: space-around;
       }
