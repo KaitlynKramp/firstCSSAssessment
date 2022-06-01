@@ -50,7 +50,7 @@ h2 {
 }
 
 /*
-  Hides any overflow so it looks cleaner, sets
+  Hides anything that flows over the nav, sets 
   the background colour to #d4e5ed, sets the 
   position to fixed so the nav always stay at 
   the top of the page, sets to top value to 0
@@ -61,6 +61,7 @@ h2 {
   +1 so the nav is always on top 
 */
 nav {
+  overflow: hidden;
   background-color: #d4e5ed;
   position: fixed;
   top: 0px;
@@ -86,6 +87,13 @@ nav {
   -webkit-text-decoration: none;
   -moz-text-decoration: none;
   text-decoration: none;
+  font-weight: bold;
+  color: #171d3b;
+
+  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 /*
   When hovering and tabbed over the links in the nav, changes
