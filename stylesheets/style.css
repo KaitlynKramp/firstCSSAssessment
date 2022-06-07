@@ -128,7 +128,7 @@ main {
   Adds an unclickable name on the nav, sets the position 
   to static, changes display to inline, makes it float to
   the right, sets margin and padding to 0, sets font size
-  20px, and sets font weight to 100
+  to 1.25vw, and sets font weight to 100
 */
 #nav-name {
   position: static;
