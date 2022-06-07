@@ -3,7 +3,7 @@
   Course: Software Development 20S
   Teacher: Mr. Hardman
   School: Pembina Trails Early College
-  Date Last Modified: 5/2/2022
+  Date Last Modified: 6/6/2022
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -70,21 +70,39 @@
        opera, and android browser)
       */
       #about-me {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
         margin-right: 5%;
       }
 
       @media screen and (max-width: 750px) {
         #about-me {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
+
           gap: 15px 5%;
           margin: 0;
           padding: 0%;
+
           -webkit-align-items: flex-start;
+          -webkit-box-align: start;
+          -moz-box-align: start;
+          -ms-flex-align: start;
           align-items: flex-start;
         }
         #about-me p {
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
+
           margin: 0;
           padding: 2%;
         }
@@ -108,6 +126,8 @@
         margin-right: 20%;
         margin-top: auto;
         margin-bottom: auto;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
         border-radius: 5px;
       }
       /*

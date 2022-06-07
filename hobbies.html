@@ -10,8 +10,18 @@
 
     <style>
       section {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
+
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
+
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
       }
       /*
@@ -28,8 +38,20 @@
         -webkit-display: flex;
         -moz-display: flex;
         -ms-display: flex;
+        display: -webkit-box;
         display: flex;
+
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+
+        -webkit-flex-basis: 20%;
+
+        -ms-flex-preferred-size: 20%;
 
         flex-basis: 20%;
       }
@@ -40,12 +62,6 @@
       .hobbies-content {
         flex-basis: 20%;
       }
-
-      /* @media screen and (max-width: 750px) {
-        .hobbies {
-          flex-wrap: wrap;
-        }
-      } */
     </style>
   </head>
   <body>

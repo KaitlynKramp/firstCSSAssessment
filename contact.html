@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="stylesheets/style.css" />
     <style>
       main {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: flex;
-        gap: 100;
-        flex-wrap: wrap;
+
+        -webkit-box-pack: space-evenly;
+        -webkit-justify-content: space-evenly;
+        -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
       }
       .contacts {
-        margin: 5% 20%;
+        margin: 5%;
       }
     </style>
   </head>
@@ -34,8 +42,6 @@
     <main>
       <a class="contacts">Phone Number</a>
       <a class="contacts">Email</a>
-      <a class="contacts">Instagram</a>
-      <a class="contacts">Facebook</a>
     </main>
   </body>
 </html>
