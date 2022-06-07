@@ -57,7 +57,7 @@ h2 {
   so it sticks to the very top of the page, sets
   the padding to 15px, sets left and right to 0 
   so the nav goes to the sides of the page, sets the 
-  nav font size to 16px, and sets the z-index to 
+  nav font size to 1vw, and sets the z-index to 
   +1 so the nav is always on top 
 */
 nav {
